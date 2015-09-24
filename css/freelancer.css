@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #63C6F9;
 }
 
 h1,
@@ -63,15 +63,15 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #63C6F9;
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #2391E6;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #2391E6;
     background-color: #fff;
 }
 
