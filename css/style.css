@@ -58,7 +58,7 @@ body a {
 .container {
     width: 80%;
     min-width: 360px;
-    min-height: 600px;
+    min-height: 400px;
     margin: 30px auto 30px auto;
     position: relative;
     background-color: #f8f8f8;
@@ -97,25 +97,28 @@ body a {
     border: 3px solid #17A56C;
 }
 
-#about h1, h2, h3, p {
+#about h1 {
+    font-size: 6em;
+    line-height: 1em;
     color: #404040;
     padding-right: 10px;
     padding-left: 10px;
 }
 
-#about h1 {
-    font-size: 6em;
-    line-height: 1em;
-}
-
 #about h2 {
     font-size: 3em;
     line-height: 1em;
+    color: #404040;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #about p {
     font-size: 2em;
     line-height: 1.8em;
+    color: #404040;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 
