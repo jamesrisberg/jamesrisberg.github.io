@@ -1,149 +1,110 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-    
-<title>JR</title>
-    
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="James Risberg, Mobile Developer, Mobile Designer, Designer, 
-Developer, Graphic Designer" />
-    
-<script type="applijegleryion/x-javascript"> 
-    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } 
-</script>
-    
-<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
-    
-<!-- Custom Theme files -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />	
-<script src="js/jquery-1.11.1.min.js"></script>
-    
-<!--Webfonts-->
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed" />
-    
-<!--Scripts-->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-			jQuery(document).ready(function($) {
-				$(".scroll").click(function(event){		
-					event.preventDefault();
-					$('html,body').animate({scrollTop:$(this.hash).offset().top},900);
-				});
-			});
-</script>
+
+    <title>JR</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="James Risberg, Mobile Developer, Mobile Designer, Designer, Developer, Graphic Designer" />
+
+    <script type="applijegleryion/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+    </script>
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--Webfonts-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed" />
+
+    <!--Scripts-->
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 900);
+            });
+        });
+    </script>
 </head>
-    
+
 <body>
 
-    <div class="side_nav">
-        <ul class="cl-effect-16">
-            <li><a class="active scroll" href="#home" data-hover="Home">Home</a></li>
-            <li><a class="scroll" href="#about" data-hover="About">About</a></li>
-            <li><a class="scroll" href="#portfolio" data-hover="Portfolio">Portfolio</a></li>
-            <div class="clearfix"></div>
+    <div class="container">
+        <ul class="navBar cl-effect-16 nav nav-pills nav-justified" id="tabs">
+            <li class="active"><a data-toggle="pill" href="#about" data-hover="About">About</a></li>
+            <li><a data-toggle="pill" href="#portfolio" data-hover="Portfolio">Portfolio</a></li>
+            <li><a data-toggle="pill" href="#contact" data-hover="Contact">Contact</a></li>
         </ul>
+
+        <div class="tab-content">
+
+            <div id="about" class="tab-pane fade in active">
+                    <img src="images/me.jpg" alt=" " title="" id="aboutImage">
+                    <h1>James Risberg</h1>
+                    <h2>Mobile Developer and Designer</h2>
+
+                    <p>I've been developing for mobile since 2012, and I love it. I like making digital products you can touch, crafting experiences that are both intuitively interacted with and beautiful to look at.</p>
+            </div>
+
+            <div id="portfolio" class="tab-pane fade">
+                <div class="grid">
+                    <figure class="effect-dexter">
+                        <img src="images/portfolio/SimpollPortfolioEntryBackground.png" alt="" />
+                        <figcaption>
+                            <h2><span>Simpoll</span></h2>
+                            <p>Built a simple polling app for crowdsourcing basic decisions for YHack 2015. Wrote most of the native app myself in Swift, communicating with a backend server via Restful API.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-dexter">
+                        <img src="images/portfolio/SimpollIconPortfolioItem.png" alt="" />
+                        <figcaption>
+                            <h2><span>Simpoll Icon</span></h2>
+                            <p>Designed an icon using Sketch for my Yhack 2015 project. My first foray into graphic design.</p>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-dexter">
+                        <img src="images/portfolio/VerigoPortfolioItemBackground.png" alt="" />
+                        <figcaption>
+                            <h2><span>Verigo</span></h2>
+                            <p>Developed and maintained an Objective-C application to interface with proprietary Bluetooth 4.0 data logging devices. Worked with external graphic designers to implement UI and UX.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+            <div id="contact" class="tab-pane fade">Contact me bro</div>
+
+        </div>
+
     </div>
-    
-    <div id="wrapper">
-        
-<!-- Home Section -->
-    
-        <div class="fullWidth" id="home">
-            <div id="filter"></div>
-            <div id="nameTitle">
-                <h1>Hello! I'm <strong>James Risberg</strong></h1>
-                <h2> I make pretty apps and pretty graphics.</h2>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    
-<!------------------->
-    
-<!-- About Section -->
-    
-        <div class="fullWidth" id="about">
-            <div id="aboutTop">
-                <img src="images/me.jpg" alt=" " title="me" id="aboutImage">
-            </div>
 
-            <div id="aboutText">
-                <h4>I'm James Risberg, a mobile developer and graphic designer.</h4>
-                <p>This is the second thing about me isn't it nice?</p>
-                <p>This is the third thing about me isn't it nice?</p>
-                <p>This is the fourth thing about me isn't it nice?</p>
-            </div>
-        </div>	   
-    
-<!-------------------->
-
-<!-- Portfolio Grid -->
-
-        <div class="fullWidth" id="portfolio">
-            <div class="grid">
-                <figure class="effect-dexter">
-                    <img src="images/portfolio/SimpollIconPortfolioItem.png" alt=""/>
-                    <figcaption>
-                        <h2><span>Simpoll Icon</span></h2>
-                        <p>This is an awesome description</p>
-                    </figcaption>			
-                </figure>
-                
-                <figure class="effect-dexter">
-                    <img src="images/portfolio/SimpollPortfolioEntryBackground.png" alt=""/>
-                    <figcaption>
-                        <h2><span>Simpoll</span></h2>
-                        <p>This is an awesome description</p>
-                    </figcaption>			
-                </figure>
-                
-                <figure class="effect-dexter">
-                    <img src="images/portfolio/VerigoPortfolioItemBackground.png" alt=""/>
-                    <figcaption>
-                        <h2><span>Verigo</span></h2>
-                        <p>This is an awesome description</p>
-                    </figcaption>			
-                </figure>
-            </div>
-        </div>
-
-<!-------------------->
-
-<!-- Footer Section -->
-        <div id="quote">
-            <script>
-            (function() {
-              var quotes = [
-                  "\"Design is the intermediary between information and understanding.\" - Hans Hofmann",
-                  "\"Good design is obvious. Great design is transparent.\" - Joe Soprano",
-                  "\"Simplicity, carried to an an extreme, becomes elegance.\" - Jon Franklin",
-              ];
-              var quote = quotes[Math.floor(Math.random() * quotes.length)];
-              document.getElementById("quote").innerHTML =
-                '<div<<p>' + quote + '</p>';
+    <div id="footer">
+        <script>
+            (function () {
+                var quotes = [
+              "\"Design is the intermediary between information and understanding.\" - Hans Hofmann",
+              "\"Good design is obvious. Great design is transparent.\" - Joe Soprano",
+              "\"Simplicity, carried to an an extreme, becomes elegance.\" - Jon Franklin",
+          ];
+                var quote = quotes[Math.floor(Math.random() * quotes.length)];
+                document.getElementById("footer").innerHTML =
+                    '<div<<p>' + quote + '</p>';
             })();
-          </script>
-        </div>
-    </div>
-    
-<!-- Smooth Scrolling -->
-<script type="text/javascript">
-            $(document).ready(function() {
-                /*
-                var defaults = {
-                    containerID: 'toTop', // fading element id
-                    containerHoverID: 'toTopHover', // fading element hover id
-                    scrollSpeed: 1200,
-                    easingType: 'linear' 
-                };
-                */
-
-                $().UItoTop({ easingType: 'easeOutQuart' });
-
-            });
         </script>
-<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-
+    </div>
 </body>
+
 </html>
