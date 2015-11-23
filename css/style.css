@@ -60,7 +60,7 @@ body a {
     width: 80%;
     min-width: 360px;
     min-height: 400px;
-    margin: 30px auto 30px auto;
+    margin: 20px auto 20px auto;
     position: relative;
     background-color: #f8f8f8;
     border-radius: 4px;
@@ -83,14 +83,20 @@ body a {
     margin-top: 10px;
 }
 
+#aboutTop {
+    display: block;
+}
+
+#aboutBottom {
+    margin-bottom: 20px;
+}
+
 #aboutImage {
     height: 300px;
     width: 300px;
     border-radius: 50%;
     border: 3px solid black;
     transition: .4s all ease;
-    float: left;
-    margin-left: 8%;
 }
 
 #aboutImage:hover {
@@ -119,6 +125,18 @@ body a {
     color: #404040;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+#resumeLink {
+    font-size: 4em;
+    line-height: 1em;
+    color: #17A56C;
+    text-decoration: none;
+    transition: text-shadow .35s ease;
+}
+
+#resumeLink:hover {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -151,7 +169,6 @@ body a {
     margin: 10px 1%;
     min-width: 340px;
     max-width: 30%;
-    max-height: 360px;
     width: 48%;
     background: #3085a3;
     text-align: center;
@@ -322,6 +339,7 @@ figure.effect-dexter:hover p {
     color: #f8f8f8;
     min-height: 120px;
     line-height: 120px;
+    min-width: 95%;
     border-radius: 4px;
     transition: box-shadow .35s ease;
 }
@@ -394,6 +412,27 @@ i {
 
 /*------------------*/
 
+#backToSite {
+    color: #f8f8f8;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: fixed;
+    transition: text-shadow .35s ease;
+}
+
+#backToSite:hover {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#resume {
+    width: 80%;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
 /*-- Responsiveness --*/
 
 @media (max-width:1440px) {}
@@ -406,7 +445,20 @@ i {
 
 @media (max-width:800px) {}
 
-@media (max-width:768px) {}
+@media (max-width:768px) {
+    .half-column {
+        display: block;
+        width: 100%;
+        float: left;
+    }
+    #column1 {
+        padding:0 5px 0 5px;
+    }
+
+    #column2 {
+        padding-left: 0 5px 0 5px;
+    }
+}
 
 @media (max-width:640px) {}
 
@@ -418,4 +470,4 @@ i {
 
 @media (max-width:375px) {}
 
-@media (max-width:320px) {}
+@media (max-width:360px) {}
