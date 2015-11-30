@@ -95,12 +95,11 @@ body a {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: 3px solid black;
     transition: .4s all ease;
 }
 
 #aboutImage:hover {
-    border: 3px solid #17A56C;
+    
 }
 
 #about h1 {
