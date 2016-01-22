@@ -168,7 +168,7 @@ body a {
     margin: 10px 1%;
     min-width: 340px;
     max-width: 30%;
-    width: 48%;
+    height: 460px;
     background: #3085a3;
     text-align: center;
     cursor: pointer;
@@ -179,7 +179,7 @@ body a {
     display: block;
     min-height: 100%;
     max-width: 100%;
-    opacity: 0.8;
+    opacity: 0.4;
 }
 
 .grid figure figcaption {
@@ -264,7 +264,7 @@ figure.effect-dexter figcaption::after {
     left: 30px;
     height: -webkit-calc(50% - 30px);
     height: calc(50% - 30px);
-    border: 7px solid #17A56C;
+    
     content: '';
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -280,6 +280,7 @@ figure.effect-dexter:hover figcaption::after {
 figure.effect-dexter figcaption {
     padding: 3em;
     text-align: left;
+    height = 80%;
 }
 
 figure.effect-dexter p {
@@ -422,6 +423,33 @@ i {
 }
 
 #backToSite:hover {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+#downloadFile {
+    background: #f8f8f8;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: box-shadow .2s ease;
+}
+
+#downloadFile:hover {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
+}
+
+#downloadIcon {
+    height: 60%;
+    width: 60%;
+    padding-left: 20%;
+    padding-top: 20%;
+}
+
+#downloadFile:hover {
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
