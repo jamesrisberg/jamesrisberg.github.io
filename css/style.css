@@ -16,7 +16,6 @@ body {
     max-width: 100%;
     max-height: 100%;
     background-color: #17A56C;
-    
 }
 
 body a {
@@ -32,23 +31,40 @@ hr {
 }
 
 ::selection {
-  background: #f8f8f8; /* WebKit/Blink Browsers */
+    background: #f8f8f8; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: #f8f8f8; /* Gecko Browsers */
+    background: #f8f8f8; /* Gecko Browsers */
 }
 
 /*------------------*/
 
-/*-- About Section --*/
+/*-- About Styles --*/
+
+#logo {
+    width: 200px;
+}
 
 #banner {
-    margin-top: 10%;
+    margin-top: 20px;
 }
 
 #about {
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+#topImage {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left:50%;
+    margin-left: -100px;
+}
+
+#topImage img {
+    width: 100%;
 }
 
 #about p {
@@ -61,190 +77,22 @@ hr {
 }
 
 #about p > a {
+    color: #f8f8f8;
     text-decoration: underline;
+    -moz-text-decoration-color: #f8f8f8;
+    text-decoration-color: #f8f8f8;
+}
+
+#about p > a:hover {
     color: #404040;
+    text-decoration: underline;
+    -moz-text-decoration-color: #f8f8f8;
+    text-decoration-color: #f8f8f8;
 }
 
-#resumeLink {
-    margin-top: 80px;
-    font-size: 3em;
-    line-height: 1em;
-    color: #404040;
-    text-decoration: none;
-    transition: color .35s ease;
-}
+/*--------------------*/
 
-#resumeLink:hover {
-    color: #f8f8f8;
-}
-
-
-/*-----------------------*/
-
-/*-- Portfolio Section --*/
-
-#portfolio {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    z-index: 1;
-    margin-top: 20px;
-}
-
-.grid {
-    position: relative;
-    margin: 0 auto;
-    padding: 0 0 0 0;
-    max-width: 100%;
-    list-style: none;
-    text-align: center;
-}
-
-.grid figure {
-    position: relative;
-    float: none;
-    display: inline-block;
-    overflow: hidden;
-    margin: 10px 1%;
-    min-width: 200px;
-    max-width: 22%;
-    background: #3085a3;
-    text-align: center;
-    cursor: pointer;
-}
-
-.grid figure img {
-    position: relative;
-    display: block;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0.4;
-}
-
-.grid figure figcaption {
-    padding: 2em;
-    color: #f8f8f8;
-    text-transform: uppercase;
-    font-size: 1.8em;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.grid figure figcaption::before,
-.grid figure figcaption::after {
-    pointer-events: none;
-}
-
-.grid figure figcaption,
-.grid figure figcaption > a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Anchor will cover the whole item by default */
-
-
-/* For some effects it will show as a button */
-
-.grid figure figcaption > a {
-    z-index: 1000;
-    text-indent: 200%;
-    white-space: nowrap;
-    font-size: 0;
-    opacity: 0;
-}
-
-.grid figure h2 {
-    word-spacing: -0.15em;
-    font-weight: 300;
-}
-
-.grid figure h2 span {
-    font-weight: 800;
-}
-
-.grid figure h2,
-.grid figure p {
-    margin: 0;
-}
-
-.grid figure p {
-    letter-spacing: 1px;
-    font-size: 68.5%;
-}
-
-figure.effect-dexter {
-    background: -webkit-linear-gradient(top, rgba(37, 141, 200, 1) 0%, rgba(104, 60, 19, 1) 100%);
-    background: linear-gradient(to bottom, rgba(37, 141, 200, 1) 0%, rgba(104, 60, 19, 1) 100%);
-    transition: box-shadow .35s ease;
-}
-
-figure.effect-dexter:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-}
-
-figure.effect-dexter img {
-    -webkit-transition: opacity 0.35s;
-    transition: opacity 0.35s;
-}
-
-figure.effect-dexter:hover img {
-    opacity: 0.4;
-}
-
-figure.effect-dexter figcaption::after {
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    left: 30px;
-    height: -webkit-calc(50% - 30px);
-    height: calc(50% - 30px);
-    
-    content: '';
-    -webkit-transition: -webkit-transform 0.35s;
-    transition: transform 0.35s;
-    -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0);
-}
-
-figure.effect-dexter:hover figcaption::after {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-figure.effect-dexter figcaption {
-    padding: 3em;
-    text-align: left;
-    height = 80%;
-}
-
-figure.effect-dexter p {
-    position: absolute;
-    right: 60px;
-    bottom: 60px;
-    left: 60px;
-    opacity: 0;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: translate3d(0, -100px, 0);
-    transform: translate3d(0, -100px, 0);
-}
-
-figure.effect-dexter:hover p {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
-
-
-/*---------------------*/
-
-/*-- Contact Section --*/
+/*-- Contact Styles --*/
 
 #contact {
     margin: 10px;
@@ -268,7 +116,10 @@ figure.effect-dexter:hover p {
     color: #f8f8f8;
 }
 
-/*---------------------*/
+/*-------------------*/
+
+/*-- Footer Styles --*/
+
 #footer {
     text-align: center;
     font-size: 1.4em;
@@ -277,32 +128,7 @@ figure.effect-dexter:hover p {
 
 /*--------------------*/
 
-
-/* Effect 16: fall down */
-
-.cl-effect-16 a::before {
-    color: #17A56C;
-    content: attr(data-hover);
-    position: absolute;
-    opacity: 0;
-    -webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
-    -moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
-    transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
-    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
-    -moz-transition: -moz-transform 0.3s, opacity 0.3s;
-    transition: transform 0.3s, opacity 0.3s;
-    pointer-events: none;
-}
-
-.cl-effect-16 a:hover::before,
-.cl-effect-16 a:focus::before {
-    -webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-    -moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-    transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
-    opacity: 1;
-}
-
-/*------------------*/
+/*--- Resume Styles --*/
 
 #backToSite {
     color: #f8f8f8;
@@ -350,6 +176,8 @@ figure.effect-dexter:hover p {
     margin-top: 5%;
     margin-bottom: 20px;
 }
+
+/*--------------------*/
 
 /*-- Responsiveness --*/
 
