@@ -15,7 +15,7 @@ body {
     font-size: 100%;
     max-width: 100%;
     max-height: 100%;
-    background-color: #17A56C;
+    background-color: #1ed88e;
 }
 
 body a {
@@ -72,22 +72,18 @@ hr {
     font-size: 2em;
     line-height: 1.8em;
     color: #404040;
-    padding-right: 60px;
-    padding-left: 60px;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 #about p > a {
     color: #f8f8f8;
-    text-decoration: underline;
-    -moz-text-decoration-color: #f8f8f8;
-    text-decoration-color: #f8f8f8;
+    text-decoration: none;
 }
 
 #about p > a:hover {
     color: #404040;
-    text-decoration: underline;
-    -moz-text-decoration-color: #f8f8f8;
-    text-decoration-color: #f8f8f8;
+    text-decoration: none;
 }
 
 /*--------------------*/
