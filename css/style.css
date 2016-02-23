@@ -104,12 +104,12 @@ hr {
     font-size: 30px;
     margin-left: 5px;
     margin-right: 5px;
-    color: #404040;
+    color: #1d8999;
     transition: color 0.35s;
 }
 
 .socialIcon:hover {
-    color: #17A56C;
+    color: #404040;
 }
 
 /*-------------------*/
