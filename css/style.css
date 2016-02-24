@@ -50,8 +50,8 @@ hr {
 }
 
 #about {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto 50px auto;
+    max-width: 1000px;
 }
 
 #topImage {
@@ -67,13 +67,18 @@ hr {
     width: 100%;
 }
 
+#about p:nth-child(1) {
+    margin-bottom: 50px;
+}
+
 #about p {
     text-align: justify;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.8em;
     color: #404040;
     padding-right: 5%;
     padding-left: 5%;
+    font-family: 'Arvo', serif;
 }
 
 #about p > a {
@@ -83,7 +88,7 @@ hr {
 
 #about p > a:hover {
     color: #404040;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /*--------------------*/
