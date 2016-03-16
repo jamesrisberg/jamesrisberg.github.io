@@ -28,6 +28,8 @@ body a {
 
 hr {
     border-color: #404040;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 ::selection {
@@ -46,7 +48,7 @@ hr {
 }
 
 #banner {
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 #about {
@@ -99,6 +101,10 @@ hr {
     margin: 10px;
 }
 
+#contact a {
+    text-decoration: none;
+}
+
 .contactList {
     width: 100%;
 }
@@ -123,8 +129,12 @@ hr {
 
 #footer {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 1.4rem;
     width: 100%;
+}
+
+#quote {
+    font-size: 1.8rem;
 }
 
 /*--------------------*/
@@ -178,6 +188,38 @@ hr {
     margin-bottom: 20px;
 }
 
+/*--------------------*/
+
+/*-- Projects Style --*/
+
+.projectCell {
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.projectImage {
+    height: 200px;
+    width: 200px;
+}
+
+.projectImage img {
+    height: 100%;
+    width: 100%;
+}
+
+.projectInfo {
+    
+}
+
+.projectInfo p {
+    font-size: 1.5rem;
+    font-family: 'Arvo', serif;
+    text-align: justify;
+}
+
+.projectInfo h2 {
+    
+}
 /*--------------------*/
 
 /*-- Responsiveness --*/

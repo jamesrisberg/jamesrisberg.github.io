@@ -12,9 +12,9 @@
     </script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Custom Theme files -->
     <link href="css/style.css" rel='stylesheet' type='text/css' />
@@ -38,36 +38,36 @@
     </script>
 </head>
 
-<body class="container">
+<body class="container-fluid">
     <center>
-        
+
     </center>
 
     <div id="banner">
-<!--
+        <!--
         <div id="topImage">
             <img src="images/headshot.jpg" alt=" " title="" id="aboutImage">
         </div>
         <img id="logo" src="images/logo.png">
--->     
+-->
         <center>
             <h1>James Risberg</h1>
             <h4>james.risberg@gmail.com</h4>
         </center>
     </div>
-    
+
     <hr>
-    
+
     <div id="about">
-        <p>I'm a <a target="_blank" href="https://www.github.com/jamesrisberg">software developer</a> and designer with a passion for mobile and web. My interests are many and varied (and may be different tomorrow), but most recently I've been exploring how technology can bring people together and it's role in our lives as social animals.</p>
-        
+        <p>I'm a software developer and designer with a passion for mobile and web. My interests are many and varied (and may be different tomorrow), but most recently I've been exploring how technology can bring people together and it's role in our lives as social animals. I'm always getting into something new, and my current projects can be seen <a href="projects.html">here</a>.</p>
+
         <p></p>
-        
+
         <p>If you're looking for freelance work, if you want to collaborate on something interesting, or if you just want to say "hi", you can also reach me through any of the social links below. If you'd like a more official overview of my skills and experience, please take a gander at my <a target="_blank" href="resume.html">resume</a>.</p>
     </div>
 
     <hr>
-    
+
     <center>
         <div id="contact">
             <a href="mailto:james.risberg@gmail.com">
@@ -89,7 +89,7 @@
             <a target="_blank" href="https://www.twitter.com/jimmyris">
                 <i class="fa fa-twitter-square socialIcon"></i>
             </a>
-            
+
             <a target="_blank" href="https://www.instagram.com/jamesrisberg/">
                 <i class="fa fa-instagram socialIcon"></i>
             </a>
@@ -104,13 +104,15 @@
               "\"Good design is obvious. Great design is transparent.\" - Joe Soprano",
               "\"Simplicity, carried to an extreme, becomes elegance.\" - Jon Franklin",
               "\"The best way to have a good idea is to have lots of ideas.\" - Linus Pauling",
-              "\"Anger is a fabulous reminder that there are still a few things being misunderstood\" - Anonymous"
+              "\"Anger is a fabulous reminder that there are still a few things being misunderstood\" - Anonymous",
+              "\"Nobody is really smart enough to program a computer.\" - Steve McConnell"
           ];
                 var quote = quotes[Math.floor(Math.random() * quotes.length)];
                 document.getElementById("footer").innerHTML =
-                    '<div<<p>' + quote + '</p>';
+                    '<p id="quote">' + quote + '</p>';
             })();
         </script>
+        <div> 2016 © James Risberg Made with &lt;3 and HTML, Hosted by Github</div>
     </div>
 </body>
 
