@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/jamesrisberg
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://jamesrisberg.xyz
+  * I am jamesrisberg (https://keybase.io/jamesrisberg) on keybase.
+  * I have a public key with fingerprint 50F2 F036 94B4 7E14 3F5F  62F9 3127 8983 87C9 C510
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101329ecd1d2fcf84f8ad7f934d0f753ea5b8a71f9396a0d71dac58df7b234c8a580a",
+            "fingerprint": "50f2f03694b47e143f5f62f93127898387c9c510",
+            "host": "keybase.io",
+            "key_id": "3127898387c9c510",
+            "kid": "0101329ecd1d2fcf84f8ad7f934d0f753ea5b8a71f9396a0d71dac58df7b234c8a580a",
+            "uid": "1ebd3998e4f80d1db3d0e7909e9a3f19",
+            "username": "jamesrisberg"
+        },
+        "service": {
+            "hostname": "jamesrisberg.xyz",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1459069418,
+    "expire_in": 157680000,
+    "prev": "ceb817ca8f1d52b993c234fb0f9a942cbaabd835e30364d402744652338e7802",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.51
+Comment: https://keybase.io/crypto
+
+yMIqAnicrZJpaBNBFMeTVIutLYhSwQ9eqxYqsezu7DETwQOqrUfBigdqNO7uzCRr
+YzbupjGxrWgVqwURrAW1h6hgEcEPomhFPEI98KwiEb+IeCseSCUiWnG26Ld+dL48
+5r3/+817b15vcZ6n0OvNvzmp7+2JEu+da111nhXfj36o53QLp7lAPVdLBg2JYuIk
+QrUm5gIcL/ACEBExsIBFalAoUahhlSIgYZ6qMiCarENNFZgHKRqPVQFrhgwxVXUR
+SAbUZMhrnJ+jZixM7LhtxhIMK/NUpDxQkKRLKhEkQGWqiIwhiCpEEEDVQIYs8Cwx
+YjluBitO1xxSblrMxy6hwfKG0P/nuusGcQLRMUAIEobhGVIHmCcq4hFBGqACcoUO
+sWPaRsLUG5hxbNPRiR3mGv0ciyRNg7jDdbsZQlWeSm9hjLhtJSzDirJoJJGIB9zk
+RDruqjcTPfSXE9LNGGbjZAlJYjumFeMCAlMaCdMFC5KMeDZZAfo5koqbNgmZrkJW
+Fciz4z5DkgxpEB0KqqFBKmBZ1BECBmud6jxFGpJEQ9c0HUMgE8B+SsISL6qSpMgi
+AJCokBc5t7NNMYsLSKxMLcyQjhmOaYk6m3CNmavBYR5voSd/uM9dM09hwah/yxfu
+G+HJtHTec9rWprvyHv8Ys+DBiUXrX77/VDNrTbj4/IrfU6XLzf6tz7aZPSV3xa/1
++wPRic01ZUuX71weSVX8fudfFJqh7h49vOjbq2lVftzfO3t6rg+o3e2Vy/zdpTnf
+m3H3Ox/3v3rT4vvYYAcvpc8sXpptjTS3Lrz9g2ZvpzJ7xymrRiqpNnju2sNfh72b
+b30qapq76sKjvUXVG3Lje7NK/7qGs6sLKnqS4DqmN/Z9PxgsaK8e2/1zzwHj6aYr
+k4PVx5v2V82bucS353nZnCNTTvtPTfStOzpfHMjmPbi48mqkvGJHbpekVD6ZcG97
+bceIloGTo75kOj4fK31d3RU9VDb77gvwB11hQ0w=
+=CnTW
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jamesrisberg
+
+==================================================================
