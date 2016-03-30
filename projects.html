@@ -2,93 +2,116 @@
 
 <head>
 
-    <title>Projects</title>
+  <title>Projects</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="James Risberg, Mobile Developer, Mobile Designer, Designer, Developer, Graphic Designer" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="James Risberg, Mobile Developer, Mobile Designer, Designer, Developer, Graphic Designer" />
 
-    <script type="applijegleryion/x-javascript">
-        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-    </script>
+  <script type="applijegleryion/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
 
-    <!-- Custom Theme files -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href="css/style.css" rel='stylesheet' type='text/css' />
+  <!-- Custom Theme files -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
 
-    <!--Webfonts-->
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed" />
-    <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!--Webfonts-->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Ubuntu+Condensed" />
+  <link href='https://fonts.googleapis.com/css?family=Arvo:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 
-    <!--Scripts-->
-    <script type="text/javascript" src="js/easing.js"></script>
+  <!--Scripts-->
+  <script type="text/javascript" src="js/easing.js"></script>
 </head>
 
 <body class="container-fluid">
-    <div id="banner">
-        <center>
-            <h1>Projects</h1>
-        </center>
+  <div class="banner row">
+    <a class="backButton col-xs-1" href="index.html">Home</a>
+    <h1 class="col-xs-8 col-xs-offset-1">Projects</h1>
+  </div>
+
+  <hr>
+
+  <center>
+
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/splitstreamr.png">
+      </div>
+      <div class="projectInfo">
+        <h2>Splitstreamr</h2>
+        <h3>Distributed music streaming across a mesh network</h3>
+        <p>Splitstreamr is an iOS music streaming application that allows users to split the data cost of streaming music files across iOS devices on a mesh network. Devices form a mesh network and also connect to the backend via a websocket to download pieces of files before moving them across the mesh and reassembling them for playback. The native app is written in Swift and the backend was written in Node.js. Built in 36 hours for HackIllinois 2016. Won Best iOS/OSX Hack and Viasat's "Emerging tech to connect people" prize.</p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/splitstreamr">Devpost Writeup</a>
+      </div>
+      <hr>
+    </div>
+    
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/emojr.png">
+      </div>
+      <div class="projectInfo">
+        <h2>Emojr</h2>
+        <h3>The Emoji-only Social Network 😜</h3>
+        <p>Emojr is the Emoji-only social network. Once you've established an account under a unique (emoji-only) username, you will have access to a vibrant global community of interesting and diverse people, all expressing themselves through the power of emoji. With Emojr, you can take advantage of the vast array of expressive and meaningful emoji characters to have your message heard. Your followers can react to your posts with emoji of their own, expressing exactly how they feel abotu your quality content. Built in 30 hours at HackGSU 2016.</p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/emojr">Devpost Writeup</a>
+      </div>
+      <hr>
+    </div>
+    
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/textlist.png">
+      </div>
+      <div class="projectInfo">
+        <h2>TextList</h2>
+        <h3>The to-do list that keeps up with YOU</h3>
+        <p>TextList is an Amazon Alexa skill and web application that enables you to ask Alexa to text you reminders at any point in the future, or to set up recurring reminders. Made with Javascript in an AWS Lambda function for the skill, Node.js for the web app, Firebase as a backend and the Twilio API for texting services. Built in 36 hours for Spartahack 2016.</p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/textlist">Devpost Writeup</a>
+      </div>
+      <hr>
     </div>
 
-    <hr>
-    
-    <center>
-        <div class="projectCell">
-            <div class="projectImage">
-                <img src="images/textlist.png">
-            </div>
-            <div class="projectInfo">
-                <h2>TextList</h2>
-                <h3>The to-do list that keeps up with YOU</h3>
-                <p>TextList is an Amazon Alexa skill and web application that enables you to ask Alexa to text you reminders at any point in the future, or to set up recurring reminders. Made with Javascript in an AWS Lambda function for the skill, Node.js for the web app, Firebase as a backend and the Twilio API for texting services. Built in 36 hours for Spartahack 2016.</p>
-            </div>
-        </div>
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/feeder.png">
+      </div>
+      <div class="projectInfo">
+        <h2>Feeder</h2>
+        <h3>Custom feeds for your tweets</h3>
+        <p>Feeder is an iOS application that allows users to build custom feeds of tweets based on keyword, hashtag, account names and other criteria and easily navigate between their stored feeds. Written in Swift and making use of the Twitter SDK through Fabric. Made in 30 hours for HackFSU 2016. Won 2nd Place Overall.</p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/twetter">Devpost Writeup</a>
+      </div>
+      <hr>
+    </div>
 
-        <div class="projectCell">
-            <div class="projectImage">
-                <img src="images/splitstreamr.png">
-            </div>
-            <div class="projectInfo">
-                <h2>Splitstreamr</h2>
-                <h3>Distributed streaming across mesh networks</h3>
-                <p>Splitstreamr is an iOS music streaming application that allows users to split the data cost of streaming music files across iOS devices on a mesh network. Devices form a mesh network and also connect to the backend via a websocket to download pieces of files before moving them across the mesh and reassembling them for playback. The native app is written in Swift and the backend was written in Node.js. Built in 36 hours for HackIllinois 2016. Won Best iOS/OSX Hack and Viasat's "Emerging tech to connect people" prize.</p>
-            </div>
-        </div>
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/surveysays.png">
+      </div>
+      <div class="projectInfo">
+        <h2>SurveySays</h2>
+        <h3>Affordable, high-volume usability testing</h3>
+        <p>SurveySays is a web application that allows users to submit any website for basic usability or user testing by providing the URL, adding up to ten simple survey questions they'd like answered, and paying per response desired. It makes use of the Amazon Mechanical Turk API to automatically generate Mechanical Turk tasks for the testing and then automatically returning the results to the user as soon as they are available. Built using WordPress and PHP in 24 hours for SwampHacks 2016.</p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/surveysays">Devpost Writeup</a>
+      </div>
+      <hr>
+    </div>
 
-        <div class="projectCell">
-            <div class="projectImage">
-                <img src="images/Background.jpg">
-            </div>
-            <div class="projectInfo">
-                <h2>Feeder</h2>
-                <h3>Custom feeds for your tweets</h3>
-                <p>Feeder is an iOS application that allows users to build custom feeds of tweets based on keyword, hashtag, account names and other criteria and easily navigate between their stored feeds. Written in Swift and making use of the Twitter SDK through Fabric. Made in 30 hours for HackFSU 2016. Won 2nd Place Overall.</p>
-            </div>
-        </div>
-
-        <div class="projectCell">
-            <div class="projectImage">
-                <img src="images/Background.jpg">
-            </div>
-            <div class="projectInfo">
-                <h2>SurveySays</h2>
-                <h3>Affordable, high-volume usability testing</h3>
-                <p>SurveySays is a web application that allows users to submit any website for basic usability or user testing by providing the URL, adding up to ten simple survey questions they'd like answered, and paying per response desired. It makes use of the Amazon Mechanical Turk API to automatically generate Mechanical Turk tasks for the testing and then automatically returning the results to the user as soon as they are available. Built using WordPress and PHP in 24 hours for SwampHacks 2016.</p>
-            </div>
-        </div>
-
-        <div class="projectCell">
-            <div class="projectImage">
-                <img src="images/rbcRedesign.png">
-            </div>
-            <div class="projectInfo">
-                <h2>RBC Wallet Redesign</h2>
-                <h3>A design project for Royal Bank of Canada</h3>
-                <p>As part of a team, conducted user research through focus groups and interviews; developed storyboards, mockups and wireframes based on findings; and prepared a full design review for presentation to representatives from RBC (who liked what they saw). Built as a class project for UI/UX Design class. </p>
-            </div>
-        </div>
-    </center>
+    <div class="projectCell">
+      <div class="projectImage">
+        <img src="images/rbcRedesign.png">
+      </div>
+      <div class="projectInfo">
+        <h2>RBC Wallet Redesign</h2>
+        <h3>A design project for Royal Bank of Canada</h3>
+        <p>As part of a team, conducted user research through focus groups and interviews; developed storyboards, mockups and wireframes based on findings; and prepared a full design review for presentation to representatives from RBC (who liked what they saw). Built as a class project for UI/UX Design class. </p>
+        <a class="projectWriteUpLink" href="http://devpost.com/software/rbc-wallet-redesign">Devpost Writeup</a>
+      </div>
+      <hr>
+    </div>
+  </center>
 </body>
 
 </html>

@@ -1,226 +1,208 @@
 /*-- Global Element Styles --*/
 
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 html {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-    font-family: 'Ubuntu Condensed', 'Raleway', sans-serif;
-    font-size: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: #ACE7EF;
+  font-family: 'Ubuntu Condensed', 'Raleway', sans-serif;
+  font-size: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #ACE7EF;
 }
 
 body a {
-    transition: 0.5s all;
-    -webkit-transition: 0.5s all;
-    -moz-transition: 0.5s all;
-    -o-transition: 0.5s all;
-    -ms-transition: 0.5s all;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
 }
 
 hr {
-    border-color: #404040;
-    margin-left: 100px;
-    margin-right: 100px;
+  border-color: #404040;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 ::selection {
-    background: #f8f8f8; /* WebKit/Blink Browsers */
-}
-::-moz-selection {
-    background: #f8f8f8; /* Gecko Browsers */
+  background: #f8f8f8;
+  /* WebKit/Blink Browsers */
 }
 
+::-moz-selection {
+  background: #f8f8f8;
+  /* Gecko Browsers */
+}
+
+
 /*------------------*/
+
 
 /*-- About Styles --*/
 
 #logo {
-    width: 200px;
-}
-
-#banner {
-    margin-top: 50px;
+  width: 200px;
 }
 
 #about {
-    margin: 50px auto 50px auto;
-    max-width: 1000px;
+  margin: 50px auto 50px auto;
+  max-width: 1000px;
 }
 
 #topImage {
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    left:50%;
-    margin-left: -100px;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  left: 50%;
+  margin-left: -100px;
 }
 
 #topImage img {
-    width: 100%;
+  width: 100%;
 }
 
 #about p:nth-child(1) {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #about p {
-    text-align: justify;
-    font-size: 2rem;
-    line-height: 1.8em;
-    color: #404040;
-    padding-right: 5%;
-    padding-left: 5%;
-    font-family: 'Arvo', serif;
+  text-align: justify;
+  font-size: 2rem;
+  line-height: 1.8em;
+  color: #404040;
+  padding-right: 5%;
+  padding-left: 5%;
+  font-family: 'Arvo', serif;
 }
 
 #about p > a {
-    color: #1d8999;
-    text-decoration: none;
+  color: #1d8999;
+  text-decoration: none;
 }
 
 #about p > a:hover {
-    color: #404040;
-    text-decoration: underline;
+  color: #404040;
+  text-decoration: underline;
 }
 
+
 /*--------------------*/
+
 
 /*-- Contact Styles --*/
 
 #contact {
-    margin: 10px;
+  margin: 10px;
 }
 
 #contact a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contactList {
-    width: 100%;
+  width: 100%;
 }
 
 .socialIcon {
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-    color: #1d8999;
-    transition: color 0.35s;
+  height: 30px;
+  width: 30px;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #1d8999;
+  transition: color 0.35s;
 }
 
 .socialIcon:hover {
-    color: #404040;
+  color: #404040;
 }
+
 
 /*-------------------*/
 
+
 /*-- Footer Styles --*/
 
-#footer {
-    text-align: center;
-    font-size: 1.4rem;
-    width: 100%;
+.banner {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-top: 50px;
 }
 
 #quote {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
+
 /*--------------------*/
+
 
 /*--- Resume Styles --*/
 
-#backToSite {
-    color: #f8f8f8;
-    text-decoration: none;
-    text-align: center;
-    margin-top: 5px;
-    margin-left: 5px;
-    position: fixed;
-    transition: text-shadow .35s ease;
+.backButton {
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 20px;
 }
 
-#backToSite:hover {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-#downloadFile {
-    background: #f8f8f8;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 15px;
-    height: 50px;
-    width: 50px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transition: box-shadow .2s ease;
-}
-
-#downloadFile:hover {
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
-}
-
-#downloadIcon {
-    height: 60%;
-    width: 60%;
-    padding-left: 20%;
-    padding-top: 20%;
-}
-
-#downloadFile:hover {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
+.downloadButton {}
 
 #resume {
-    width: 60%;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  width: 95%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
+
 /*--------------------*/
+
 
 /*-- Projects Style --*/
 
 .projectCell {
-    margin-bottom: 40px;
-    max-width: 800px;
+  margin-bottom: 40px;
+  max-width: 800px;
 }
 
 .projectImage {
-    height: 200px;
-    width: 200px;
+  height: 200px;
+  width: 200px;
 }
 
 .projectImage img {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .projectInfo {
-    
+  margin-bottom: 50px;
 }
 
 .projectInfo p {
-    font-size: 1.5rem;
-    font-family: 'Arvo', serif;
-    text-align: justify;
+  font-size: 1.5rem;
+  font-family: 'Arvo', serif;
+  text-align: justify;
 }
 
-.projectInfo h2 {
-    
+.projectInfo h2 {}
+
+.projectWriteUpLink {
+  font-size: 2.5rem;
 }
+
+
 /*--------------------*/
+
 
 /*-- Responsiveness --*/
 
