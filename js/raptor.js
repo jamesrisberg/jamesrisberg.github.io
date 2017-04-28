@@ -114,4 +114,3 @@ function combinations(set) {
 	}
 	return combs;
 }
-</script>
