@@ -74,7 +74,7 @@ hr {
   margin-bottom: 50px;
 }
 
-#about p {
+#about p, #about li {
   text-align: justify;
   font-size: 2rem;
   line-height: 1.8em;
@@ -82,6 +82,15 @@ hr {
   padding-right: 5%;
   padding-left: 5%;
   font-family: 'Arvo', serif;
+}
+
+#about ul {
+  padding-left: 7%;
+}
+
+#about li {
+  font-size: 1.6rem;
+  padding: 0;
 }
 
 #about p > a {
@@ -139,6 +148,7 @@ hr {
 }
 
 #quote {
+  font-family: 'Arvo', serif;
   font-size: 1.8rem;
 }
 
