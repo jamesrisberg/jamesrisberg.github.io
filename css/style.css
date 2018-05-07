@@ -52,7 +52,7 @@ hr {
   width: 200px;
 }
 
-#about {
+#about, #freelance {
   margin: 50px auto 50px auto;
   max-width: 1000px;
 }
@@ -70,35 +70,32 @@ hr {
   width: 100%;
 }
 
-#about p:nth-child(1) {
-  margin-bottom: 50px;
-}
-
-#about p, #about li {
+#about p, #about li, #freelance p, #freelance li {
   text-align: justify;
   font-size: 2rem;
   line-height: 1.8em;
   color: #404040;
   padding-right: 5%;
   padding-left: 5%;
+  padding-bottom: 1rem;
   font-family: 'Arvo', serif;
 }
 
-#about ul {
+#about ul, #freelance ul {
   padding-left: 7%;
 }
 
-#about li {
+#about li, #freelance li {
   font-size: 1.6rem;
   padding: 0;
 }
 
-#about p > a {
+#about a, #freelance a{
   color: #1d8999;
   text-decoration: none;
 }
 
-#about p > a:hover {
+#about a:hover, #freelance a:hover {
   color: #404040;
   text-decoration: underline;
 }
