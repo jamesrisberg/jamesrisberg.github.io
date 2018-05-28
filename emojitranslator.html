@@ -1,0 +1,42 @@
+<html>
+
+<head>
+
+  <title>Emoji Translator</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="keywords" content="James Risberg, Mobile Developer, Mobile Designer, Designer, Developer, Graphic Designer" />
+
+  <script type="applijegleryion/x-javascript">
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+  </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href="css/style.css" rel='stylesheet' type='text/css' />
+
+  <script src="js/jquery-1.11.1.min.js"></script>
+  
+</head>
+
+<body class="container vertical-center">
+  <div>
+    <script src="js/emojitranslate.js"></script>
+    <script type="text/javascript">
+      function showTranslation() {
+        var translatedText = emojisForString(document.getElementById('textInput').value);
+        document.getElementById("translatedText").innerHTML =
+          '<p class="col" style="font-size: 40">' + translatedText + '</p>';
+      }
+    </script>
+
+    <div id="translatedText" class="row"></div>
+
+    <div class="row">
+      <input id="textInput" class="col" type="text" placeholder="Type your message..." />
+      <button id="submitButton" class="col" onclick="showTranslation()">Translate</button>
+    </div>
+  </div>
+</body>
+
+</html>
