@@ -2,21 +2,17 @@
   <head>
     <style>
       body {
+        background-color: blanchedalmond;
         padding: 50px;
-        font-family: arial;
-        font-size: 12px;
-      }
-      div {
-        width: 500px;
-        margin: 0 auto;
-        padding: 10px 0;
+        font-family: monospace;
+        font-size: 1rem;
       }
       .address {
-        text-align: justify;
         width: 100%;
-        font-size: 2rem;
+        margin: 10 auto;
+        padding: 10px;
+        text-align: justify;
         word-wrap: break-word;
-        padding-left: 1%;
       }
       .free {
         background-color: lightgreen;
@@ -24,7 +20,11 @@
       .taken {
         background-color: red;
       }
+      #addresses {
+        width: 100%;
+      }
     </style>
+    <script src="https://www.moneybutton.com/moneybutton.js"></script>
     <script>
       function queryForAddress(address) {
         var query = {
@@ -313,7 +313,7 @@
           div.className = "address free";
           div.id = address;
           div.innerHTML = address;
-          document.body.appendChild(div);
+          document.getElementById("addresses").appendChild(div);
 
           // Attach API KEY as header
           var header = {
@@ -338,5 +338,20 @@
       }
     </script>
   </head>
-  <body onload="loadAddress()"></body>
+  <body onload="loadAddress()">
+    <div style="font-size: 2rem">The #21e8project explorer</div>
+    <div>
+      <a href="21e8.com" style="display: block">21e8.com</a>
+      <br />
+      <div
+        class="money-button"
+        data-to="jrisberg@moneybutton.com"
+        data-editable="true"
+        data-currency="BSV"
+        data-label="Tips!"
+      ></div>
+    </div>
+    <div id="addresses"></div>
+    <div>Made with ❤️ by james</div>
+  </body>
 </html>
