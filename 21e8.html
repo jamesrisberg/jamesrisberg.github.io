@@ -37,18 +37,6 @@
 
         return query;
       }
-      function queryForAddressHashtag(address) {
-        var searchString = "#" + address;
-        var query = {
-          v: 3,
-          q: {
-            find: { "out.s2": searchString },
-            limit: 10
-          }
-        };
-
-        return query;
-      }
       function urlForQuery(query) {
         var b64 = btoa(JSON.stringify(query));
         var url =
@@ -320,14 +308,6 @@
         ];
 
         addresses.forEach(address => {
-          var query = {
-            v: 3,
-            q: {
-              find: { "out.s2": address },
-              limit: 10
-            }
-          };
-
           var div = document.createElement("div");
           div.className = "address free";
           div.id = address;
@@ -341,20 +321,6 @@
 
           // Make an HTTP request to bitdb.network public endpoint
           fetch(urlForQuery(queryForAddress(address)), header)
-            .then(function(r) {
-              return r.json();
-            })
-            .then(function(r) {
-              // "r.c" stands for confirmed transactions response array
-              // Parse the response and render the results on the screen
-              r.c.forEach(function(output) {
-                var div = document.getElementById(address);
-                console.log(output);
-                div.className = "address taken";
-              });
-            });
-
-          fetch(urlForQuery(queryForAddressHashtag(address)), header)
             .then(function(r) {
               return r.json();
             })
