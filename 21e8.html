@@ -11,16 +11,18 @@
         margin: 0 auto;
         padding: 10px 0;
       }
-      .taken {
-        background-color: lightcoral;
-      }
       .address {
-        background-color: lightgreen;
         text-align: justify;
         width: 100%;
         font-size: 2rem;
         word-wrap: break-word;
         padding-left: 1%;
+      }
+      .free {
+        background-color: lightgreen;
+      }
+      .taken {
+        background-color: red;
       }
     </style>
     <script>
@@ -327,7 +329,7 @@
           };
 
           var div = document.createElement("div");
-          div.className = "address";
+          div.className = "address free";
           div.id = address;
           div.innerHTML = address;
           document.body.appendChild(div);
