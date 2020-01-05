@@ -30,8 +30,9 @@
         var query = {
           v: 3,
           q: {
-            find: { "out.s2": address },
-            limit: 10
+            find: { $text: { $search: address } },
+            limit: 10,
+            sort: { "blk.i": 1 }
           }
         };
 
