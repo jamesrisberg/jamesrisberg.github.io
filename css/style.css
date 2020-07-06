@@ -11,11 +11,11 @@ html {
 }
 
 body {
-  font-family: 'Ubuntu Condensed', 'Raleway', sans-serif;
+  font-family: "Ubuntu Condensed", "Raleway", sans-serif;
   font-size: 100%;
   max-width: 100%;
   max-height: 100%;
-  background-color: #ACE7EF;
+  background-color: #ace7ef;
 }
 
 body a {
@@ -43,7 +43,7 @@ hr {
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100%; /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
 
   display: flex;
@@ -53,6 +53,9 @@ hr {
 
 /*------------------*/
 
+.footnote {
+  font-size: smaller;
+}
 
 /*-- About Styles --*/
 
@@ -60,7 +63,8 @@ hr {
   width: 200px;
 }
 
-#about, #freelance {
+#about,
+#freelance {
   margin: 50px auto 50px auto;
   max-width: 1000px;
 }
@@ -78,7 +82,10 @@ hr {
   width: 100%;
 }
 
-#about p, #about li, #freelance p, #freelance li {
+#about p,
+#about li,
+#freelance p,
+#freelance li {
   text-align: justify;
   font-size: 2rem;
   line-height: 1.8em;
@@ -86,31 +93,33 @@ hr {
   padding-right: 5%;
   padding-left: 5%;
   padding-bottom: 1rem;
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
 }
 
-#about ul, #freelance ul {
+#about ul,
+#freelance ul {
   padding-left: 7%;
 }
 
-#about li, #freelance li {
+#about li,
+#freelance li {
   font-size: 1.6rem;
   padding: 0;
 }
 
-#about a, #freelance a{
+#about a,
+#freelance a {
   color: #1d8999;
   text-decoration: none;
 }
 
-#about a:hover, #freelance a:hover {
+#about a:hover,
+#freelance a:hover {
   color: #404040;
   text-decoration: underline;
 }
 
-
 /*--------------------*/
-
 
 /*-- Contact Styles --*/
 
@@ -140,9 +149,7 @@ hr {
   color: #404040;
 }
 
-
 /*-------------------*/
-
 
 /*-- Footer Styles --*/
 
@@ -153,13 +160,11 @@ hr {
 }
 
 #quote {
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   font-size: 1.8rem;
 }
 
-
 /*--------------------*/
-
 
 /*--- Resume Styles --*/
 
@@ -170,7 +175,8 @@ hr {
   padding-top: 20px;
 }
 
-.downloadButton {}
+.downloadButton {
+}
 
 #resume {
   width: 95%;
@@ -178,9 +184,7 @@ hr {
   margin-bottom: 40px;
 }
 
-
 /*--------------------*/
-
 
 /*-- Projects Style --*/
 
@@ -205,40 +209,50 @@ hr {
 
 .projectInfo p {
   font-size: 1.5rem;
-  font-family: 'Arvo', serif;
+  font-family: "Arvo", serif;
   text-align: justify;
 }
 
-.projectInfo h2 {}
+.projectInfo h2 {
+}
 
 .projectWriteUpLink {
   font-size: 2.5rem;
 }
 
-
 /*--------------------*/
 
 /*-- Responsiveness --*/
 
-@media (max-width:1440px) {}
+@media (max-width: 1440px) {
+}
 
-@media (max-width:1366px) {}
+@media (max-width: 1366px) {
+}
 
-@media (max-width:1280px) {}
+@media (max-width: 1280px) {
+}
 
-@media (max-width:1024px) {}
+@media (max-width: 1024px) {
+}
 
-@media (max-width:800px) {}
+@media (max-width: 800px) {
+}
 
-@media (max-width:768px) {}
+@media (max-width: 768px) {
+}
 
-@media (max-width:640px) {}
+@media (max-width: 640px) {
+}
 
-@media (max-width:600px) {}
+@media (max-width: 600px) {
+}
 
-@media (max-width:480px) {}
+@media (max-width: 480px) {
+}
 
-@media (max-width:384px) {}
+@media (max-width: 384px) {
+}
 
 @media (max-width:375px) {}
 
