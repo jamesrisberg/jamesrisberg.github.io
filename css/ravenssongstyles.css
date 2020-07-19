@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: crimson;
+}
+
+h1 {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-family: "UnifrakturMaguntia", cursive;
+  font-size: 100px;
+  color: crimson;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding-bottom: 30px;
+}
+
+p {
+  padding-bottom: 30px;
+  font-size: 1.5rem;
+}
+
+audio {
+  padding: 30px;
+}
