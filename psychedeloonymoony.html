@@ -4,6 +4,9 @@
   <title>psychedeloonymoony</title>
   <style>
     body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 0;
       padding: 0;
       height: 100vh;
@@ -29,7 +32,9 @@
 
     .rotate {
       animation: rotateAnimation 4s infinite linear;
-      max-width: 30vw;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
     }
 
     @keyframes rotateAnimation {
