@@ -13,18 +13,25 @@
     }
 
     @keyframes backgroundAnimation {
-      0% { background-color: #ff0000; }
-      50% { background-color: #00ff00; }
-      100% { background-color: #0000ff; }
+      0% { background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff); }
+      50% { background: linear-gradient(45deg, #00ff00, #ff0000, #0000ff); }
+      100% { background: linear-gradient(45deg, #ff0000, #00ff00, #00ff00); }
     }
 
     .rotate {
       animation: rotateAnimation 4s infinite linear;
+      max-width: 50vw;
     }
 
     @keyframes rotateAnimation {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
+    }
+
+    @media (max-width: 600px) {
+      .rotate {
+        max-width: 80vw;
+      }
     }
   </style>
 </head>
